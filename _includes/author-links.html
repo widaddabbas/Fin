@@ -124,5 +124,13 @@
       </li>
     {%- endif -%}
 
+    {%- if _author.portfolio -%}
+      <li title="{{ _locale_string_follow | replace: '[NAME]', 'Portfolio' }}">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://{{ _author.portfolio }}.myportfolio.com" target="_blank">
+          <div class="icon">{%- include svg/icon/social/portfolio.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+
   </ul>
 </div>
